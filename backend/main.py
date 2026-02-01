@@ -9,6 +9,7 @@ from sqlalchemy.orm import Session
 
 from database import get_db, get_supabase_client
 from database.supabase_client import sign_up, sign_in, sign_out
+from app.api.endpoints.analysis import router as analysis_router
 
 app = FastAPI(
     title="Ascendly API",
@@ -24,6 +25,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+# ============ ROUTERS ============
+app.include_router(analysis_router)
 
 
 # ============ SCHEMAS ============

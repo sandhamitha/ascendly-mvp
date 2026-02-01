@@ -46,6 +46,8 @@ out/
 
 # Claude
 claude.md
+IMPLEMENTATION_PLAN.md
+.claude-session
 
 # IDE
 .idea/

@@ -1,6 +1,9 @@
 fastapi
-uvicorn
+uvicorn[standard]
 sqlalchemy
+psycopg2-binary
+supabase
+python-dotenv
+pydantic[email]
 pandas
 crewai
-python-dotenv
